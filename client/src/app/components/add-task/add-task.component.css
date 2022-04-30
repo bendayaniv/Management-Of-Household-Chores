@@ -1,0 +1,44 @@
+h3, table {
+    font-style: italic;
+    margin: 10px auto;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+}
+
+.add-task input, .add-task textarea, .add-task select {
+    font-style: italic;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    width: 400px;
+}
+
+.add-task textarea {
+    height: 100px;
+}
+
+.add-task button{
+    font-style: italic;
+    border: 2px solid white;
+    background-color: rgb(13, 13, 197);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.add-task button:hover{
+    background-color:white;  
+    border: 2px solid black;
+    color: black;
+}

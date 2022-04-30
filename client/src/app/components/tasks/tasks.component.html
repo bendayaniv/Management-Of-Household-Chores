@@ -1,0 +1,27 @@
+<h2 *ngIf="tasks">All Our Tasks:</h2>
+
+<div class="select-div" *ngIf="members">
+
+    <button (click)="getAllTasks()">Get All Tasks</button>
+
+    <br><br>
+
+    <select [(ngModel)]="member" (change)="setSelected()">
+        <option [value]="-1" [selected]="true" [disabled]="true">Select Member...</option>
+        <option [value]="m.memberID" *ngFor="let m of members">{{ m.name }}</option>
+    </select>
+
+</div>
+
+<div *ngIf="tasks">
+    <h3>There is still {{ tasks.length }} tasks left for your freedom:</h3>
+    <div class="tasks-class" *ngFor="let t of tasks">
+        <button (click)="deleteTask(t.todoID)">X</button>
+        <!-- <p>{{ members[t.memberID - 1].name }}</p> -->
+        <!-- <p>{{ member.name }}</p> -->
+        <!-- <p *ngFor="let m of member">{{ m.name }}</p> -->
+        <p>{{ t.name }}</p>
+        <p>The Task: {{ t.todoDescription }}</p>
+        <p>{{ t.date }}</p>
+    </div>
+</div>

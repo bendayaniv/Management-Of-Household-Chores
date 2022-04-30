@@ -1,0 +1,40 @@
+<div class="add-task">
+
+    
+
+    <h3>Add New Task: </h3>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <select name="member" [(ngModel)]="task.memberID">
+                            <option [value]="-1" [selected]="true" [disabled]="true">Select Member...</option>
+                            <option *ngFor="let m of members" [value]="m.memberID">{{ m.name }}</option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><textarea placeholder="Description..." name="todoDescription"
+                        [(ngModel)]="task.todoDescription"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="date" name="date" [(ngModel)]="task.date"></td>
+                </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td><span name="date" [(ngModel)]="task.date"> {{ currentDate | date: 'yyyy dd MMMM' }}</span></td>
+                </tr> -->
+                <tr>
+                    <td></td>
+                    <td><button (click)="addTask()">Add</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</div>

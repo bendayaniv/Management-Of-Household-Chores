@@ -1,0 +1,75 @@
+.tasks-class {
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    background-color: darkgoldenrod;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1s;
+    overflow-y: auto;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 2;
+	}
+}
+
+.select-div {
+    margin: 10px auto;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.select-div select {
+    font-style: italic;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    width: 400px;
+}
+
+.tasks-class p {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2, h3 {
+    font-style: italic;
+    text-align: center;
+    font-weight: bolder;
+}
+
+button {
+    font-style: italic;
+    border: 2px solid white;
+    background-color: rgb(13, 13, 197);
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color:white;  
+    border: 2px solid black;
+    color: black;
+}
